@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="En" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/En" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/En" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++14" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/SFML-2.4.2/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/SFML-2.4.2/lib" />
+		</Linker>
+		<Unit filename="bloom.frag" />
+		<Unit filename="cb.bmp" />
+		<Unit filename="include/achgabat/Animator.hpp" />
+		<Unit filename="include/achgabat/Application.hpp" />
+		<Unit filename="include/achgabat/AutoSpriteSheetEntity.hpp" />
+		<Unit filename="include/achgabat/Core.hpp" />
+		<Unit filename="include/achgabat/Entity.hpp" />
+		<Unit filename="include/achgabat/GameObject.hpp" />
+		<Unit filename="include/achgabat/GameState.hpp" />
+		<Unit filename="include/achgabat/Pausable.hpp" />
+		<Unit filename="include/achgabat/Resetable.hpp" />
+		<Unit filename="include/achgabat/SpriteEntity.hpp" />
+		<Unit filename="include/achgabat/SpriteSheetEntity.hpp" />
+		<Unit filename="include/achgabat/Updatable.hpp" />
+		<Unit filename="include/achgabat/Vector2.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/achgabat/Animator.cpp" />
+		<Unit filename="src/achgabat/Application.cpp" />
+		<Unit filename="src/achgabat/AutoSpriteSheetEntity.cpp" />
+		<Unit filename="src/achgabat/Entity.cpp" />
+		<Unit filename="src/achgabat/GameObject.cpp" />
+		<Unit filename="src/achgabat/GameState.cpp" />
+		<Unit filename="src/achgabat/Pausable.cpp" />
+		<Unit filename="src/achgabat/Resetable.cpp" />
+		<Unit filename="src/achgabat/SpriteEntity.cpp" />
+		<Unit filename="src/achgabat/SpriteSheetEntity.cpp" />
+		<Unit filename="src/achgabat/Updatable.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
